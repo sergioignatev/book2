@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Livius</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+</head>
+<body onload="loadDoc()">
+    <h1 class="head"></h1>
+
+<div style="width:70%" id="livius"></div>
+</body>
+<script>
+function loadDoc() {
+    const xhttp = new XMLHttpRequest();
+    xhttp.onload = function() {
+      document.getElementById("livius").innerHTML = this.responseText;
+    }
+    xhttp.open("GET", "livius.txt");
+    xhttp.send();
+  }
+
+
+</script>
+</html>
