@@ -17,7 +17,7 @@ margin-right: auto;
 
 </head>
 <body onload="loadDoc()">
-    <h1 class="head">HERE</h1>
+    <h1 class="head">LIVIUS</h1>
 
 <div id="livius"></div>
 </body>
@@ -27,7 +27,7 @@ function loadDoc() {
     xhttp.onload = function() {
       document.getElementById("livius").innerHTML = this.responseText;
     }
-    xhttp.open("GET", "livius.pdf");
+    xhttp.open("GET", "livius.txt");
     xhttp.send();
   }
 
