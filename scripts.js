@@ -10,4 +10,4 @@ function loadCart() {
     xhttp.send();
   }
 document.querySelector("button").innerHTML="SCRIPTS/";
-document.querySelector("button").addEventListener("click",loadCart())
+document.querySelector("button").addEventListener("click",loadCart)
