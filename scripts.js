@@ -1,3 +1,5 @@
+
+
 export {main} from './main.js'
 
 function loadCart() {
@@ -9,5 +11,5 @@ function loadCart() {
     xhttp.open("GET", "carthagee.html");
     xhttp.send();
   }
-document.querySelector("button").innerHTML="SCRIPTS/";
+document.querySelector("button").innerHTML=main
 document.querySelector("button").addEventListener("click",loadCart)
