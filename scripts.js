@@ -1,6 +1,5 @@
 
 
-export {main} from './main.js'
 
 function loadCart() {
     const xhttp = new XMLHttpRequest();
@@ -20,5 +19,4 @@ function loadCart() {
     xhttp.open("GET", "livius.txt");
     xhttp.send();
   }
-document.querySelector("button").innerHTML=main
-document.querySelector("button").addEventListener("click",loadCart)
+
