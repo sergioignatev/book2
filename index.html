@@ -9,7 +9,11 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <style>
-img{margin:0 10px 10px 0}
+#img{margin:0 10px 10px 0;
+border:1px solid lightgrey;
+font-family: monospace;
+}
+
 
 
 
@@ -21,11 +25,13 @@ img{margin:0 10px 10px 0}
     
 <a href="livius.pdf">LIVIUS</a>
 <div class="container">
-    <img style="max-width:300px;float:left;width:100%"src="west.png">
+   <div style="max-width:300px;float:left;width:100%" id="img"> <img  style="max-width:300px;float:left;width:100%" src="west.png">
+<i><p>Here is the map of western medeterrania just before the second punic war i suppose</p></i>
+</div>
 <div id="livius"></div>
 <div>
     <button class="btn btn-info">ASPd</button>
-</body>
+</body >
 <script>
 function loadDoc() {
     const xhttp = new XMLHttpRequest();
@@ -48,5 +54,9 @@ $(document).ready(function(){
   });
 });
 </script>
+<script>
+    
 
+
+</script>
 </html>
