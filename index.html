@@ -20,11 +20,13 @@ font-family: monospace;
 </style>
 
 </head>
-<body onload="loadDoc()">
+<body >
     
     
-
+<button class="btn btn-success" onclick="loadDoc()">LOrem</button>
+<button onclick="loadCart()">Cart</button>
 <div class="container mt-5">
+   
    <div style="max-width:300px;float:left;width:100%" id="img"> <img  style="max-width:300px;float:left;width:100%" src="west.png">
 <i><p id="figc">Here is the map of western medeterrania just before the second punic war i suppose</p><a href="livius.pdf">LIVIUS</a></i>
 </div>
@@ -45,6 +47,20 @@ function loadDoc() {
 
 
 </script>
+
+<script>
+    function loadCart() {
+        const xhttp = new XMLHttpRequest();
+        xhttp.onload = function() {
+          document.getElementById("livius").innerHTML = this.responseText;
+         
+        }
+        xhttp.open("GET", "carthagee.html");
+        xhttp.send();
+      }
+    
+    
+    </script>
 
 <script>
 $(document).ready(function(){
