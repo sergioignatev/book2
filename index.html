@@ -24,7 +24,7 @@ font-family: monospace;
  
     <div id="test"></div>
 <button class="btn btn-success" onclick="loadDoc()">Lorem Ipsum</button>
-<button class="btn btn-success" onclick="loadCart()">Cart http</button>
+<button class="btn btn-success" onclick="loadCart()">Cart http\\</button>
 <div class="container mt-5">
    
    <div style="max-width:300px;float:left;width:100%" id="img"> <img  style="max-width:300px;float:left;width:100%" src="west.png">
@@ -32,7 +32,7 @@ font-family: monospace;
 </div>
 <div class="container" id="livius"></div>
 <div>
-    <button class="btn btn-info">ASPd/</button>
+    <button class="btn btn-info">ASPd/</btton>
 </body >
 
 
@@ -43,7 +43,15 @@ font-family: monospace;
 
 
 <script>
-    
+      function loadCart() {
+    const xhttp = new XMLHttpRequest();
+    xhttp.onload = function() {
+      document.getElementById("livius").innerHTML = this.responseText;
+     
+    }
+    xhttp.open("GET", "carthagee.html");
+    xhttp.send();
+  }
 
 
 </script>
