@@ -1,4 +1,4 @@
-export {main} from '.mainjs'
+
   function loadDoc() {
     const xhttp = new XMLHttpRequest();
     xhttp.onload = function() {
@@ -9,4 +9,4 @@ export {main} from '.mainjs'
     xhttp.send();
   }
 
-document.getElementById("test").innerHTML=main
+

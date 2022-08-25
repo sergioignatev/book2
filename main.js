@@ -1,1 +1,2 @@
-export let main ="This is the main"
+let main ="This is the main"
+export default main
